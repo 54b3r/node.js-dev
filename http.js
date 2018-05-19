@@ -1,3 +1,4 @@
+
 const http = require('http');
 
 const server = http.createServer((req, res) => {
@@ -5,6 +6,7 @@ const server = http.createServer((req, res) => {
         res.write('You are now connected to this WebServer!');
         res.end();
     }
+    
     if (req.url ==='/api/courses') {
         res.write(JSON.stringify([1, 2, 3]));
         res.end();
